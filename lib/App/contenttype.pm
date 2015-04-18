@@ -1,16 +1,8 @@
 package App::contenttype;
 use strict;
 use warnings;
-use Carp qw/croak/;
 
 our $VERSION = '0.01';
-
-sub new {
-    my $class = shift;
-    my $args  = shift || +{};
-
-    bless $args, $class;
-}
 
 1;
 
@@ -18,17 +10,17 @@ __END__
 
 =head1 NAME
 
-App::contenttype - one line description
+App::contenttype - to search Content-Type
 
 
 =head1 SYNOPSIS
 
-    use App::contenttype;
+L<contenttype>
 
 
 =head1 DESCRIPTION
 
-App::contenttype is
+See L<contenttype> command's document.
 
 
 =head1 REPOSITORY
@@ -51,7 +43,7 @@ Dai Okabayashi E<lt>bayashi@cpan.orgE<gt>
 
 =head1 SEE ALSO
 
-L<Other::Module>
+L<contenttype>
 
 
 =head1 LICENSE

@@ -18,7 +18,6 @@ my $builder = Module::Build->new(
         'perl' => '5.008001',
         'strict' => 0,
         'warnings' => 0,
-        'Carp' => 0,
     },
     add_to_cleanup      => [ 'App-contenttype-*' ],
     meta_merge     => {
@@ -31,6 +30,7 @@ my $builder = Module::Build->new(
         },
       }
     },
+    script_files         => [ 'script/contenttype' ],
     recursive_test_files => 1,
     test_files => (-d '.git' || $ENV{RELEASE_TESTING}) ? ['t/', 'xt/'] : ['t/'],
 );
